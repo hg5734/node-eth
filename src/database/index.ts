@@ -17,7 +17,8 @@ db.once('open', () => {
 export const connection = () => {
   mongoose.connect(`mongodb://${database.host}:${database.port}/${database.db}`, {
     keepAlive: 1,
-    useNewUrlParser: true
+    useNewUrlParser: true,
+    useUnifiedTopology: true 
   });
   return mongoose.connection;
 };
