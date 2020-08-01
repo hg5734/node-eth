@@ -23,7 +23,8 @@ export const vars = {
     host: process.env.MONGO_HOST,
     port: process.env.MONGO_PORT,
     db: process.env.MONGO_DB
-  }
+  },
+  networkUrl: process.env.CHIN_NETWORK_URL
 };
 
 export default {

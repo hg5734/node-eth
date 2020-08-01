@@ -14,7 +14,11 @@ const assetSchema = new mongoose.Schema({
         unique : true
     },
     symbol: {
-        type: String,
+        type: String
+    }, 
+    lastSyncBlock :{ // Sync block number
+        type : Number,
+        default : 0
     }
 });
 
