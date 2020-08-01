@@ -84,7 +84,6 @@ export default class AppService {
     let { ethAddress, assetAddress } = query;
     ethAddress = ethAddress.toUpperCase();
     assetAddress = assetAddress.toUpperCase();
-    
     // sync the latest logs
     await this.syncAssetLogs(ethAddress, assetAddress);
     return TransactionDbService.findTransactions({

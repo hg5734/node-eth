@@ -1,0 +1,167 @@
+{
+	"id": "698a6441-d533-34b8-fdf6-23667150aeef",
+	"name": "eth-app",
+	"description": "",
+	"order": [
+		"33ee060e-4dd5-866a-53c0-d9bf777c2b1c",
+		"b14dc07d-8cab-a2db-5973-7b0e235a8992",
+		"fa89e5ab-3195-2653-0e37-656aa6d0238e",
+		"f17a12af-cff4-3856-fee8-0eee649c255e"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1596275134930,
+	"owner": "4476912",
+	"public": false,
+	"requests": [
+		{
+			"id": "33ee060e-4dd5-866a-53c0-d9bf777c2b1c",
+			"headers": "Content-Type: application/json\n//apiKey: 501edc9e\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "apiKey",
+					"value": "501edc9e",
+					"description": "",
+					"enabled": false
+				}
+			],
+			"url": "localhost:4000/api/v1/auth/login",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "698a6441-d533-34b8-fdf6-23667150aeef",
+			"data": [],
+			"dataMode": "raw",
+			"name": "localhost:4000/api/v1/auth/login",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1596275277893,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"email\":\"superadmin@gmail.com\",\n\t\"password\":\"testpassword\"\n}"
+		},
+		{
+			"id": "b14dc07d-8cab-a2db-5973-7b0e235a8992",
+			"headers": "Content-Type: application/json\nx-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTYzMzUyNjYsInV1aWQiOiI1ZjI0ODVlMWRiMGIzNmQ5ZTkxMzc5ODIiLCJuYW1lIjoic3VwZXIgYWRtaW4iLCJlbWFpbCI6InN1cGVyYWRtaW5AZ21haWwuY29tIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNTk2Mjc1MjY2fQ.j0AB1-c3IcMR4VJ9Wutej0smIAqlPhWvpQ9MpDEVxjM\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "x-access-token",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTYzMzUyNjYsInV1aWQiOiI1ZjI0ODVlMWRiMGIzNmQ5ZTkxMzc5ODIiLCJuYW1lIjoic3VwZXIgYWRtaW4iLCJlbWFpbCI6InN1cGVyYWRtaW5AZ21haWwuY29tIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNTk2Mjc1MjY2fQ.j0AB1-c3IcMR4VJ9Wutej0smIAqlPhWvpQ9MpDEVxjM",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:4000/api/v1/app/asset",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "698a6441-d533-34b8-fdf6-23667150aeef",
+			"data": [],
+			"dataMode": "raw",
+			"name": "localhost:4000/api/v1/app/asset",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1596275776440,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t \"name\": \"Goyal\",\n     \"ethAddress\": \"0x0E0744b920960c4B74Db4980C9f84784d0956c77\",\n     \"assetAddress\": \"0x65f07e7961e15ef190dcf78dfb6d48cb362237e3\",\n     \"symbol\": \"goyal\"\n}"
+		},
+		{
+			"id": "f17a12af-cff4-3856-fee8-0eee649c255e",
+			"headers": "x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTYzMzUyNjYsInV1aWQiOiI1ZjI0ODVlMWRiMGIzNmQ5ZTkxMzc5ODIiLCJuYW1lIjoic3VwZXIgYWRtaW4iLCJlbWFpbCI6InN1cGVyYWRtaW5AZ21haWwuY29tIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNTk2Mjc1MjY2fQ.j0AB1-c3IcMR4VJ9Wutej0smIAqlPhWvpQ9MpDEVxjM\n",
+			"headerData": [
+				{
+					"key": "x-access-token",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTYzMzUyNjYsInV1aWQiOiI1ZjI0ODVlMWRiMGIzNmQ5ZTkxMzc5ODIiLCJuYW1lIjoic3VwZXIgYWRtaW4iLCJlbWFpbCI6InN1cGVyYWRtaW5AZ21haWwuY29tIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNTk2Mjc1MjY2fQ.j0AB1-c3IcMR4VJ9Wutej0smIAqlPhWvpQ9MpDEVxjM",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:4000/api/v1/app/asset/logs?ethAddress=0X0E0744B920960C4B74DB4980C9F84784D0956C77&assetAddress=0X65F07E7961E15EF190DCF78DFB6D48CB362237E3",
+			"queryParams": [
+				{
+					"key": "ethAddress",
+					"value": "0X0E0744B920960C4B74DB4980C9F84784D0956C77",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "assetAddress",
+					"value": "0X65F07E7961E15EF190DCF78DFB6D48CB362237E3",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "698a6441-d533-34b8-fdf6-23667150aeef",
+			"data": null,
+			"dataMode": "params",
+			"name": "localhost:4000/api/v1/app/asset/logs?ethAddress=0X0E0744B920960C4B74DB4980C9F84784D0956C77&assetAddress=0X65F07E7961E15EF190DCF78DFB6D48CB362237E3",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1596276232889,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "fa89e5ab-3195-2653-0e37-656aa6d0238e",
+			"headers": "x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTYzMzUyNjYsInV1aWQiOiI1ZjI0ODVlMWRiMGIzNmQ5ZTkxMzc5ODIiLCJuYW1lIjoic3VwZXIgYWRtaW4iLCJlbWFpbCI6InN1cGVyYWRtaW5AZ21haWwuY29tIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNTk2Mjc1MjY2fQ.j0AB1-c3IcMR4VJ9Wutej0smIAqlPhWvpQ9MpDEVxjM\n",
+			"headerData": [
+				{
+					"key": "x-access-token",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTYzMzUyNjYsInV1aWQiOiI1ZjI0ODVlMWRiMGIzNmQ5ZTkxMzc5ODIiLCJuYW1lIjoic3VwZXIgYWRtaW4iLCJlbWFpbCI6InN1cGVyYWRtaW5AZ21haWwuY29tIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNTk2Mjc1MjY2fQ.j0AB1-c3IcMR4VJ9Wutej0smIAqlPhWvpQ9MpDEVxjM",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:4000/api/v1/app/assets",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "698a6441-d533-34b8-fdf6-23667150aeef",
+			"data": null,
+			"dataMode": "params",
+			"name": "localhost:4000/api/v1/app/assets",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1596275813826,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}

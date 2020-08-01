@@ -26,7 +26,7 @@ export default class TransactionService extends BaseService {
     }
 
     static bulkCreate(transactions, options?: any) {
-        return TransactionModel.insert(transactions, options);
+        return TransactionModel.insertMany(transactions, options);
     }
 
 }

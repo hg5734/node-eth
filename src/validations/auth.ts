@@ -17,6 +17,15 @@ export default {
       assetAddress: Joi.string().required(),
       symbol: Joi.string().optional()
     })
+  },
+  assetLogs :{
+    headers: Joi.object().keys({
+      'x-access-token': Joi.string().required()
+    }),
+    query: Joi.object().keys({
+      ethAddress: Joi.string().required(),
+      assetAddress: Joi.string().required()
+    })
   }
 
 }

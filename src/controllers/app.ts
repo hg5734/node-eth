@@ -18,7 +18,7 @@ export default class AppController {
       next(error);
     }
   }
-  
+
   static async addAsset(
     req: express.Request,
     res: express.Response,
@@ -27,6 +27,22 @@ export default class AppController {
     try {
       const reqBody = { ...req.body };
       const answer = await AppService.addAsset(reqBody);
+      const response = new CustomResponse();
+      return response.setResponse(res, { result: answer });
+    }
+    catch (error) {
+      next(error);
+    }
+  }
+
+  static async logsList(
+    req: express.Request,
+    res: express.Response,
+    next: express.NextFunction
+  ): Promise<void> {
+    try {
+      let { ethAddress, assetAddress } = req.query;
+      const answer = await AppService.getAssetLogs({ ethAddress, assetAddress });
       const response = new CustomResponse();
       return response.setResponse(res, { result: answer });
     }
